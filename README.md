@@ -22,9 +22,9 @@ Our full method, named **Anytime Dense Prediction with Confidence (ADP-C)**, ach
 |     Setting (HRNet-W48)     | model | exit1 | exit2 | exit3 |  exit4   | mean mIoU | exit1 | exit2 | exit3 |   exit4   | mean GFLOPs |
 | ------------------------- | :---: | :---: | :---: | :---: | :------: | :---------: | :---: | :---: | :---: | :-------: | :---------: |
 |          HRNet-W48          |   -   |   -   |   -   |   80.7   |      -      |   -   |   -   |   -   |   696.2   |      -      |
-|         EE           | [model](https://drive.google.com/file/d/11AnwHiNmWZqtXbulJOGWTUCjlYfFweFB/view?usp=sharing) | 34.3  | 59.0  | 76.9  |   80.4   |    62.7     | 521.6 | 717.9 | 914.2 |  1110.5   |    816.0    |
-|       EE + RH        | [model](https://drive.google.com/file/d/1zkgTRm8HyBqKA7dolM1i3AW6vs2V9AkE/view?usp=sharing) | 44.6  | 60.2  | 76.6  |   79.9   |    65.3     | 41.9  | 105.6 | 368.0 |   701.3   |    304.2    |
-| ADP-C: EE + RH + CA  | [model](https://drive.google.com/file/d/1Un4XDqPOubGnKmm2vUis5CHM-EFOZsm0/view?usp=sharing) | 44.3  | 60.1  | 76.8  | **81.3** |  **65.7**   | 41.9  | 93.9  | 259.3 | **387.1** |  **195.6**  |
+|         EE           | [model](https://drive.google.com/file/d/1GOXuP0e-qDp1mqiilxdhL8FyP8E-6pZP/view?usp=sharing) | 34.3  | 59.0  | 76.9  |   80.4   |    62.7     | 521.6 | 717.9 | 914.2 |  1110.5   |    816.0    |
+|       EE + RH        | [model](https://drive.google.com/file/d/11QNuEpq-oBErMKO3eMEddAU8ug9OYyts/view?usp=sharing) | 44.6  | 60.2  | 76.6  |   79.9   |    65.3     | 41.9  | 105.6 | 368.0 |   701.3   |    304.2    |
+| ADP-C: EE + RH + CA  | [model](https://drive.google.com/file/d/1zcKkKWuknrLHpOEVRvUm82xlowjafQ_u/view?usp=sharing) | 44.3  | 60.1  | 76.8  | **81.3** |  **65.7**   | 41.9  | 93.9  | 259.3 | **387.1** |  **195.6**  |
 
 
 
@@ -71,7 +71,7 @@ This should give
 44.34	60.13	76.82	81.31	65.65
 ```
 
-**ADP-C (EE + RH + CA)** (w18) [Pretrained w18 with ADP-C](https://drive.google.com/file/d/1XxEH0acJZUGO2UDquCZx2asjHyneKYNT/view?usp=sharing)
+**ADP-C (EE + RH + CA)** (w18) [Pretrained w18 with ADP-C](https://drive.google.com/file/d/1bU7spRV236OV7D5dgZzHy_AI0FN3oGAp/view?usp=sharing)
 ```bash
 python tools/test_ee.py \
 --cfg experiments/cityscapes/w18.yaml MODEL.NAME model_anytime  \
